@@ -1,0 +1,35 @@
+{
+  "name": "career-evidence-portfolio-coach",
+  "version": "1.0.0",
+  "description": "Backend-only capstone for Career Evidence and Portfolio Coach",
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test tests/**/*.test.js",
+    "seed": "node scripts/seed.js",
+    "smoke": "node scripts/smokeTest.js",
+    "check-ai": "node scripts/checkAi.js"
+  },
+  "keywords": [
+    "career",
+    "portfolio",
+    "evidence",
+    "coaching",
+    "capstone",
+    "gemini",
+    "express"
+  ],
+  "author": "CSE Capstone Team",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^2.30.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}

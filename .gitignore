@@ -1,0 +1,24 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment and secrets
+.env
+.env.local
+*.env
+
+# Temporary files and store transaction temp files
+data/*.tmp.*
+data/*.tmp
+tests/fixtures/*.tmp.*
+tests/fixtures/*.tmp
+
+# Operating System files
+Thumbs.db
+.DS_Store
+
+# Logs
+logs/
+*.log
