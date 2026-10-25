@@ -192,6 +192,13 @@ The following screenshots demonstrate the application features using sample stud
 
 ---
 
+### GitHub Actions CI Verification
+
+GitHub Actions successfully installed dependencies, built the frontend,
+and ran the automated tests on Node.js 20 and 22.
+
+![Successful GitHub Actions CI checks](docs/screenshots/CI_Verification.png)
+
 ## 🧪 Automated Test Coverage Summary
 
 The automated test suite (`npm test`) executes natively using `node --test` with total database isolation.
