@@ -1,0 +1,20 @@
+[
+  { "id": "skill-nodejs", "name": "Node.js" },
+  { "id": "skill-express", "name": "Express.js" },
+  { "id": "skill-rest-apis", "name": "RESTful APIs" },
+  { "id": "skill-sql", "name": "SQL & Relational Databases" },
+  { "id": "skill-mongodb", "name": "MongoDB & NoSQL" },
+  { "id": "skill-git", "name": "Git & Version Control" },
+  { "id": "skill-docker", "name": "Docker & Containerization" },
+  { "id": "skill-testing", "name": "Automated Testing & QA" },
+  { "id": "skill-api-security", "name": "API Security & Auth" },
+  { "id": "skill-system-design", "name": "System Design" },
+  { "id": "skill-javascript", "name": "JavaScript (ES6+)" },
+  { "id": "skill-react", "name": "React.js" },
+  { "id": "skill-html-css", "name": "HTML5 & CSS3" },
+  { "id": "skill-responsive-design", "name": "Responsive Design" },
+  { "id": "skill-python", "name": "Python" },
+  { "id": "skill-pandas", "name": "Data Analysis (Pandas)" },
+  { "id": "skill-data-viz", "name": "Data Visualization" },
+  { "id": "skill-stats", "name": "Applied Statistics" }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "role-backend-dev",
+    "name": "Backend Developer",
+    "description": "Designs, implements, and maintains server-side logic, data APIs, and storage architectures.",
+    "expectedSkillIds": [
+      "skill-nodejs",
+      "skill-express",
+      "skill-rest-apis",
+      "skill-sql",
+      "skill-git",
+      "skill-testing",
+      "skill-api-security"
+    ]
+  },
+  {
+    "id": "role-frontend-dev",
+    "name": "Frontend Developer",
+    "description": "Constructs responsive, user-friendly client web interfaces, component architectures, and API integrations.",
+    "expectedSkillIds": [
+      "skill-javascript",
+      "skill-react",
+      "skill-html-css",
+      "skill-responsive-design",
+      "skill-rest-apis",
+      "skill-git"
+    ]
+  },
+  {
+    "id": "role-data-analyst",
+    "name": "Data Analyst",
+    "description": "Analyzes structured datasets, designs data visualizations, extracts business insights, and manages analytical queries.",
+    "expectedSkillIds": [
+      "skill-python",
+      "skill-sql",
+      "skill-pandas",
+      "skill-data-viz",
+      "skill-stats",
+      "skill-git"
+    ]
+  },
+  {
+    "id": "role-fullstack-dev",
+    "name": "Full Stack Developer",
+    "description": "Builds end-to-end web applications combining frontend user interfaces, backend APIs, and persistence layers.",
+    "expectedSkillIds": [
+      "skill-javascript",
+      "skill-nodejs",
+      "skill-react",
+      "skill-rest-apis",
+      "skill-sql",
+      "skill-git",
+      "skill-docker"
+    ]
+  }
+]
