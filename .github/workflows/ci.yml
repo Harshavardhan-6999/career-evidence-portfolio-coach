@@ -2,9 +2,9 @@ name: Continuous Integration
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
   pull_request:
-    branches: [ main, master ]
+    branches: [main, master]
 
 jobs:
   build-and-test:
@@ -30,14 +30,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          cache: npm
+
       - name: Use npm version matching local development
         run: npm install --global npm@11.19.0
 
       - name: Show runtime versions
-      run: |
-         node --version
-         npm --version
+        run: |
+          node --version
+          npm --version
 
       - name: Install Root Dependencies
         run: npm ci
