@@ -32,12 +32,12 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - name: Use npm version matching local development
-      	run: npm install --global npm@11.19.0
+        run: npm install --global npm@11.19.0
 
       - name: Show runtime versions
-     	run: |
-          node --version
-       	  npm --version
+      run: |
+         node --version
+         npm --version
 
       - name: Install Root Dependencies
         run: npm ci
