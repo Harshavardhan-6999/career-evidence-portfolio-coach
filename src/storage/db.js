@@ -61,7 +61,7 @@ export async function seedCatalogsIfEmpty() {
       const rawRoles = await fs.readFile(rolesPath, 'utf8');
       const rolesData = JSON.parse(rawRoles);
       await Role.insertMany(rolesData);
-      console.log(`📦 Seeded ${rolesData.length} educational roles into MongoDB.`);
+      console.log(`Seeded ${rolesData.length} educational roles into MongoDB.`);
     }
 
     const skillCount = await Skill.countDocuments();
@@ -70,10 +70,10 @@ export async function seedCatalogsIfEmpty() {
       const rawSkills = await fs.readFile(skillsPath, 'utf8');
       const skillsData = JSON.parse(rawSkills);
       await Skill.insertMany(skillsData);
-      console.log(`📦 Seeded ${skillsData.length} catalog skills into MongoDB.`);
+      console.log(`Seeded ${skillsData.length} catalog skills into MongoDB.`);
     }
   } catch (err) {
-    console.warn(`⚠️ Catalog auto-seed warning: ${err.message}`);
+    console.warn(`Catalog auto-seed warning: ${err.message}`);
   }
 }
 
@@ -113,7 +113,7 @@ export async function connectDb(customUri = null) {
   let uri = customUri || process.env.MONGODB_URI;
 
   if (!uri || typeof uri !== 'string' || uri.trim().length === 0) {
-    console.warn('⚠️  MONGODB_URI is not set. Database operations will report 503 until configured.');
+    console.warn('MONGODB_URI is not set. Database operations will report 503 until configured.');
     return null;
   }
 
@@ -159,14 +159,14 @@ export async function connectDb(customUri = null) {
       serverSelectionTimeoutMS: 5000,
       autoIndex: true
     });
-    console.log(`🍃 Connected to MongoDB (${mongoose.connection.host}/${mongoose.connection.name})`);
+    console.log(`Connected to MongoDB (${mongoose.connection.host}/${mongoose.connection.name})`);
 
     // Ensure catalogs are seeded
     await seedCatalogsIfEmpty();
 
     return mongoose;
   } catch (err) {
-    console.error(`❌ MongoDB connection failed for host [${targetHost}]: ${err.message}`);
+    console.error(`MongoDB connection failed for host [${targetHost}]: ${err.message}`);
     // Do not crash server; allow health check and offline handlers to report status
     return null;
   } finally {
@@ -180,6 +180,6 @@ export async function connectDb(customUri = null) {
 export async function disconnectDb() {
   if (mongoose.connection.readyState !== 0) {
     await mongoose.disconnect();
-    console.log('🍃 Disconnected from MongoDB.');
+    console.log('Disconnected from MongoDB.');
   }
 }
