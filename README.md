@@ -15,7 +15,7 @@ A full-stack, AI-assisted career evidence management and portfolio coaching plat
 
 ---
 
-## 👥 Fixed Team Module Ownership (10 CSE Students)
+## 👥 Fixed Team Module Ownership (10 CSE-AIML Students)
 
 1. **N. Tharun Kumar (25071A66B8):** Requirements coordination, educational role catalog, and target role-gap comparison service.
 2. **P. Srihith Reddy (25071A66B9):** Express server architecture, environment security, and shared Google Gen AI client integration.
@@ -248,3 +248,19 @@ The application is engineered for zero-CORS, single-origin cloud deployment on p
 > [!IMPORTANT]
 > **Mandatory Platform Policy:**
 > This platform strictly evaluates what the student's supplied evidence records substantiate. Missing evidence does not prove a lack of technical ability. The system does not claim to verify credentials, calculate hiring probability scores, or predict employment outcomes.
+>
+> ## Live Demo
+
+**Career Evidence & Portfolio Coach**
+
+Access the deployed application here:
+
+https://career-evidence-portfolio-coach.onrender.com
+
+The application includes a responsive React dashboard, MongoDB Atlas integration, secure student authentication, career evidence management, skill-gap analysis, and AI-powered career recommendations.
+
+**Deployment Platform:** Render
+
+**Database:** MongoDB Atlas
+
+**AI Integration:** Google Gemini
