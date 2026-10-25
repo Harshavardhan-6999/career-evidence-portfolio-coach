@@ -12,7 +12,7 @@
     "dev": "node --watch server.js",
     "build": "npm --prefix frontend install && npm --prefix frontend run build",
     "build:frontend": "npm --prefix frontend run build",
-    "test": "node --test tests/**/*.test.js",
+    "test": "node --test tests/*.test.js",
     "migrate": "node scripts/migrateToMongo.js --execute",
     "migrate:dry-run": "node scripts/migrateToMongo.js --dry-run",
     "claim-account": "node scripts/claimAccount.js",
